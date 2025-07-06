@@ -1,0 +1,427 @@
+/* MAKE IT RESPONSIVE */
+/* SHADOW AND COLORS FOR NAV AND MAIN */
+/*collect all the colors in root */
+/* EDIT THE TRANSaTION OF THE IMAGES and the px unit of the images*/
+/*ENHANSE THE  AMIN BUTTON */
+/* border to every section */
+/* change the sizes of images */
+/* ADD ANIMATION TO FIRST OPEN TO THE PAGE */
+/* CHANGE THE COLOR OF THE NAME OF THE COMPANY */
+/* Ensure OF THE ENGLISH NAME OF THE COMPANY */
+/* REVERSE THE NUMBER */
+/* MAKE THE NAV FIXED */
+/* MOVE THE USER WHEN HE CLICK TO THE WHATSAPP AND PHONE NUMBER */ 
+/*REMOVE THE XE */
+/* ADD PHONE BUTTON BUTTON FOR WHATSAPP AND PHONE ON NAV AND MAIN SECTION  */  
+/* ADD EXTRA COLORS */
+/* REMOVE 90 DAYS SERVICE */
+/* EHANSE THE HOVER ON PHONE BUTTON */
+/* ADD GRADIENTS FOR FOUR BOXES */
+/* ADD BOXES FOR SERVICES */ 
+/* ADD MARGIN BOTTOM FOR THE TWO LAST SERVICES */ 
+/* ADD ICONS ON FOOTER */
+/* ADD MADE BY BASMALA ON FOOTER */ 
+/* ADD SMOOTH scroll behaver */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --logo-color: rgb(101 77 60);
+}
+
+body {
+  font-family: "cairo", sans-serif;
+}
+.company-name-en {
+  font-size: 2.7rem;
+  font-weight: 900;
+  color: rgb(101 77 60);
+  padding: 0.3em 7em 0 0;
+}
+h1 a {
+  font-size: 1.5rem;
+  padding-top: 1.2em;
+  /* text-decoration: none; */
+  color: #6c757d;
+}
+.trademark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+nav a {
+  font-size: 1.6rem;
+  padding-top: 1.6em;
+  color: rgb(101 77 60);
+  font-weight: 650;
+}
+a {
+  text-decoration: none;
+}
+/* li {
+  list-style-type: none;
+} */
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10.5rem;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 37.5rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  /* box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); REVIEW */
+}
+main {
+  background-color: #f0f2f4;
+  /* linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);  */
+  /* box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); */
+  margin-top: 1.5em;
+}
+h2 {
+  font-size: 3rem;
+  padding: 2em 5.5em 0 0;
+  color: #a08b5b;
+}
+.about-office {
+  font-size: 1.9rem;
+  color: #4e5860;
+  margin: 1.5em 8.5em;
+  width: 35%;
+}
+.main-list {
+  margin: 1.5em 12em 0 11.3em;
+  font-size: 1.6rem;
+  color: black;
+}
+.main-list li {
+  line-height: 3em;
+  /* list-style-type: none; */
+}
+
+.second-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 6em;
+}
+.slideshow {
+  width: 600px;
+  height: 520px;
+  margin-top: -16em;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  animation: slideshow 8s infinite;
+  transition: background-image 1s ease-in-out;
+  border-radius: 0.5rem;
+}
+@keyframes slideshow {
+  0% {
+    background-image: url(assets/banner1.jpg);
+  }
+  50% {
+    background-image: url(assets/banner2.jpg);
+  }
+  70% {
+    background-image: url(assets/banner3.jpg);
+  }
+  100% {
+    background-image: url(assets/banner4.jpg);
+  }
+}
+.phone {
+  display: block;
+  width: 23%;
+  background-color: rgb(161, 127, 102);
+  color: white;
+  margin: -6rem 11.5em 4em;
+  padding-top: 1.2em;
+  padding-bottom: 1.5em;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 601;
+}
+.phone:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(105, 83, 68);
+  box-shadow: 3px -0.7px 2px rgb(48, 42, 37);
+  font-size: 1.45rem;
+}
+
+.who-are-we {
+  background-color: #f0f2f4;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
+  gap: 0.5em; /*pp*/
+  padding-top: 2em;
+  flex-wrap: wrap;
+}
+.who-are-we-heading {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
+  font-size: 3rem;
+  font-weight: 650;
+  padding: 1em 4.8em 0 0;
+  color: var(--logo-color);
+}
+
+.about-us-1,
+.about-us-2 {
+  font-size: 1.7rem;
+  color: #6c757d;
+  margin: 1.5em 8.5em 0 0;
+  width: 68%;
+}
+
+.about-us-2 {
+  margin: 1.5em 8.5em 5em 0;
+}
+
+.who-are-we-container {
+  width: 52%;
+}
+
+.features {
+  width: 40%;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  /* justify-content: space-between; */
+}
+
+.features-list li {
+  list-style-type: none;
+  width: 48%;
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 1rem;
+  box-shadow: 0 -0.5px 4px 0 rgb(101 77 60), 0 1px 4px 0 rgb(101 77 60),
+    -1.5px 0 4px 0 rgb(101 77 60), 1.5px 0 4px 0 rgb(101 77 60);
+
+  font-size: 1.2rem;
+  /*display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  */
+  text-align: center;
+}
+.features-list li:not(.before-last-box, .last-box) {
+  margin-top: 8em;
+}
+.reliable-recruitment,
+.wide-expertise,
+.continuous-support,
+.special-actions {
+  font-weight: 650;
+  font-size: 1.5rem;
+}
+.services {
+  background-color: #f0f2f4;
+  margin-top: 5em;
+}
+.best-office,
+h3 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 550;
+  padding-top: 1.5em;
+  color: var(--logo-color);
+}
+h3 {
+  padding-top: 1em;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.first-two-services {
+  display: flex;
+  flex-wrap: wrap;
+}
+.labor-image,
+.driver-image,
+.ready-to-move-labors,
+.several-nationalities {
+  width: 65%;
+  border-radius: 1rem;
+}
+
+.first-two-services,
+.second-two-services {
+  margin-top: 4.5em;
+}
+.first-service,
+.third-service {
+  margin-right: 3em;
+}
+.first-service,
+.second-service,
+.third-service,
+.fourth-service {
+  /* width: 50%; */
+  /* background-color: #fff; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.first-service span,
+.second-service span,
+.third-service span,
+.fourth-service span {
+  margin-top: 1em;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--logo-color);
+}
+.first-service p,
+.second-service p,
+.third-service p,
+.fourth-service p {
+  font-size: 1.5rem;
+  color: #4e555a;
+  width: 65%;
+}
+.second-two-services {
+  display: flex;
+  flex-wrap: wrap;
+}
+.guarantee-section {
+  background-color: #f0f2f4;
+  margin-top: 4em;
+}
+.guarantee-paragraph {
+  width: 78%;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 2em;
+  padding-right: 7em;
+  color: var(--logo-color);
+}
+.guarantee-section li {
+  /* display: block; */
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1em 8.5em 0 0;
+}
+.guarantee-description {
+  width: 54%;
+  margin: 1em 10em;
+  font-size: 1.5rem;
+}
+footer {
+  background-color: rgb(101, 77, 60);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8em;
+  margin-top: 11em;
+}
+.first-column-footer,
+.second-column-footer,
+.third-column-footer {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  color: white;
+}
+
+.xe {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 1.5em;
+}
+
+.first-column-footer p {
+  font-size: 1.4rem;
+  width: 70%;
+  line-height: 2em;
+  /* margin-top: 1em; */
+  color: #d6cece;
+}
+.first-column-footer {
+  margin-right: 16em;
+}
+.company-name-footer {
+  /* width: */
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.second-column-footer span,
+.third-column-footer span {
+  font-size: 1.9rem;
+  font-weight: 650;
+  margin-top: 3em;
+}
+.first-column-footer,
+.second-column-footer,
+.third-column-footer {
+  gap: 1rem;
+}
+.second-column-footer li,
+.third-column-footer li {
+  font-size: 1.4rem;
+  list-style-type: none;
+  line-height: 2.9rem;
+  color: #ede0e0;
+}
+.second-column-footer {
+  width: 15%;
+}
+.third-column-footer li {
+  width: 73%;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+hr {
+  width: 80%;
+  border: 1px solid rgb(111 83 63);
+}
+.footer-bottom span {
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+.footer-bottom p {
+  font-size: 1.2rem;
+  color: #ede0e0;
+}
+@media (max-width: 768px) {
+  .first-container {
+    width: 10rem;
+    gap: 0.5rem;
+  }
+  .company-name-en {
+    padding-right: 3em;
+  }
+  .trademark {
+    gap: 20rem;
+  }
+  nav {
+    gap: 5.5rem;
+  }
+}
