@@ -1,27 +1,3 @@
-/* MAKE IT RESPONSIVE */
-/* SHADOW AND COLORS FOR NAV AND MAIN */
-/*collect all the colors in root */
-/* EDIT THE TRANSaTION OF THE IMAGES and the px unit of the images*/
-/*ENHANSE THE  AMIN BUTTON */
-/* border to every section */
-/* change the sizes of images */
-/* ADD ANIMATION TO FIRST OPEN TO THE PAGE */
-/* CHANGE THE COLOR OF THE NAME OF THE COMPANY */
-/* Ensure OF THE ENGLISH NAME OF THE COMPANY */
-/* REVERSE THE NUMBER */
-/* MAKE THE NAV FIXED */
-/* MOVE THE USER WHEN HE CLICK TO THE WHATSAPP AND PHONE NUMBER */ 
-/*REMOVE THE XE */
-/* ADD PHONE BUTTON BUTTON FOR WHATSAPP AND PHONE ON NAV AND MAIN SECTION  */  
-/* ADD EXTRA COLORS */
-/* REMOVE 90 DAYS SERVICE */
-/* EHANSE THE HOVER ON PHONE BUTTON */
-/* ADD GRADIENTS FOR FOUR BOXES */
-/* ADD BOXES FOR SERVICES */ 
-/* ADD MARGIN BOTTOM FOR THE TWO LAST SERVICES */ 
-/* ADD ICONS ON FOOTER */
-/* ADD MADE BY BASMALA ON FOOTER */ 
-/* ADD SMOOTH scroll behaver */
 
 *,
 *::before,
@@ -34,84 +10,94 @@ html {
   font-size: 62.5%;
 }
 :root {
-  --logo-color: rgb(101 77 60);
+  --logo-color: #654d3c;
+  --main-background-color: #f0f2f4;
+  --h2-color: #a08b5b;
+  --about-office-color: #4e5860;
+  --black-color: #000000;
+  --phone-button: #ffffff;
+  --phone-button-background: #a17f66;
+  --phone-button-hover: #695344;
+  --phone-button-shadow: #302a25;
+  --about-us-text: #6c757d;
+  --white-color: #ffffff;
 }
 
 body {
   font-family: "cairo", sans-serif;
 }
-.company-name-en {
-  font-size: 2.7rem;
-  font-weight: 900;
-  color: rgb(101 77 60);
-  padding: 0.3em 7em 0 0;
+
+.logo {
+  display: block;
+  width: 5%;
+  margin: 0.5em 1em 0.1em 0;
+  
 }
+
 h1 a {
-  font-size: 1.5rem;
-  padding-top: 1.2em;
-  /* text-decoration: none; */
-  color: #6c757d;
-}
-.trademark {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
+  font-size: 1.5rem;
+  padding: 2.3em 0 0.1em 0;
+  color: var(--logo-color);
+}
+header {
+  display: flex;
+  gap: 1rem;
 }
 nav a {
   font-size: 1.6rem;
-  padding-top: 1.6em;
-  color: rgb(101 77 60);
+  padding: 2.2em 2em 0 0;
+  color: var(--logo-color);
   font-weight: 650;
+}
+nav {
+  padding-right: 48em;
 }
 a {
   text-decoration: none;
 }
-/* li {
-  list-style-type: none;
-} */
+
 nav {
   display: flex;
   flex-direction: row;
-  gap: 10.5rem;
+ 
 }
 
-.first-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 37.5rem;
-  background-color: rgba(255, 255, 255, 0.95);
-  /* box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); REVIEW */
+.phone-button-header {
+  background-color: var(--logo-color);
+  color: var(--white-color);
+  padding: 1em 0.8em 1em;
+  margin: 1.3em 7em 1.5em 0;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.5em;
 }
+
 main {
-  background-color: #f0f2f4;
-  /* linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);  */
-  /* box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); */
-  margin-top: 1.5em;
+  background-color: var(--main-background-color);
+  margin-top: 0.3em;
 }
 h2 {
   font-size: 3rem;
   padding: 2em 5.5em 0 0;
-  color: #a08b5b;
+  color: var(--h2-color);
 }
 .about-office {
   font-size: 1.9rem;
-  color: #4e5860;
+  color: var(--about-office-color);
   margin: 1.5em 8.5em;
   width: 35%;
 }
 .main-list {
   margin: 1.5em 12em 0 11.3em;
   font-size: 1.6rem;
-  color: black;
+  color: var(--black-color);
 }
 .main-list li {
   line-height: 3em;
-  /* list-style-type: none; */
 }
 
-.second-container {
+.main-container {
   display: flex;
   flex-direction: row;
   column-gap: 6em;
@@ -120,7 +106,6 @@ h2 {
   width: 600px;
   height: 520px;
   margin-top: -16em;
-  /* background-repeat: no-repeat; */
   background-size: cover;
   background-position: center;
   animation: slideshow 8s infinite;
@@ -129,52 +114,69 @@ h2 {
 }
 @keyframes slideshow {
   0% {
-    background-image: url(assets/banner1.jpg);
+    background-image: url(assets/banner1.webp);
   }
   50% {
-    background-image: url(assets/banner2.jpg);
+    background-image: url(assets/banner2.webp);
   }
   70% {
-    background-image: url(assets/banner3.jpg);
+    background-image: url(assets/banner3.webp);
   }
   100% {
-    background-image: url(assets/banner4.jpg);
+    background-image: url(assets/banner4.webp);
   }
 }
 .phone {
-  display: block;
-  width: 23%;
-  background-color: rgb(161, 127, 102);
-  color: white;
-  margin: -6rem 11.5em 4em;
+  display: inline-block;
+  width: 19%;
+  background-color: var(--phone-button-background);
+  color: var(--phone-button);
+  margin: -6rem 11.5em 4em 0;
   padding-top: 1.2em;
   padding-bottom: 1.5em;
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   font-size: 1.4rem;
   font-weight: 601;
 }
 .phone:hover {
   transition: all 0.5s ease-in-out;
-  background-color: rgb(105, 83, 68);
-  box-shadow: 3px -0.7px 2px rgb(48, 42, 37);
+  background-color: var(--phone-button-hover);
+  box-shadow: 3px -0.7px 2px var(--phone-button-shadow);
   font-size: 1.45rem;
+}
+.whatsapp {
+  display: inline-block;
+  width: 15%;
+  background-color: rgb(223, 220, 220);
+  color: var(--logo-color);
+  margin: -6rem 1em 4em;
+  padding-top: 1.2em;
+  padding-bottom: 1.5em;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: 601;
+}
+.whatsapp:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #27ae60;
+  box-shadow: 3px -0.7px 2px var(--phone-button-shadow);
+  font-size: 1.45rem;
+  color: var(--white-color);
 }
 
 .who-are-we {
-  background-color: #f0f2f4;
+  background-color: var(--main-background-color);
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
-  /* align-items: flex-start; */
+
   gap: 0.5em; /*pp*/
   padding-top: 2em;
   flex-wrap: wrap;
 }
 .who-are-we-heading {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: flex-start; */
+  
   font-size: 3rem;
   font-weight: 650;
   padding: 1em 4.8em 0 0;
@@ -184,7 +186,7 @@ h2 {
 .about-us-1,
 .about-us-2 {
   font-size: 1.7rem;
-  color: #6c757d;
+  color: var(--about-us-text);
   margin: 1.5em 8.5em 0 0;
   width: 68%;
 }
@@ -205,23 +207,18 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-  /* justify-content: space-between; */
+ 
 }
 
 .features-list li {
   list-style-type: none;
   width: 48%;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   padding: 1em;
   border-radius: 1rem;
   box-shadow: 0 -0.5px 4px 0 rgb(101 77 60), 0 1px 4px 0 rgb(101 77 60),
     -1.5px 0 4px 0 rgb(101 77 60), 1.5px 0 4px 0 rgb(101 77 60);
-
   font-size: 1.2rem;
-  /*display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  */
   text-align: center;
 }
 .features-list li:not(.before-last-box, .last-box) {
@@ -277,8 +274,7 @@ h3 {
 .second-service,
 .third-service,
 .fourth-service {
-  /* width: 50%; */
-  /* background-color: #fff; */
+  
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -313,13 +309,14 @@ h3 {
 .guarantee-paragraph {
   width: 78%;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 900;
   padding-top: 2em;
   padding-right: 7em;
+  text-align: center;
   color: var(--logo-color);
 }
 .guarantee-section li {
-  /* display: block; */
+ 
   font-size: 2rem;
   font-weight: 700;
   margin: 1em 8.5em 0 0;
@@ -346,26 +343,21 @@ footer {
   color: white;
 }
 
-.xe {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-top: 1.5em;
-}
-
 .first-column-footer p {
   font-size: 1.4rem;
   width: 70%;
   line-height: 2em;
-  /* margin-top: 1em; */
+  
   color: #d6cece;
 }
 .first-column-footer {
   margin-right: 16em;
 }
 .company-name-footer {
-  /* width: */
+  
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: 650;
+  margin-top: 3.5em;
 }
 .second-column-footer span,
 .third-column-footer span {
@@ -396,7 +388,7 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 hr {
   width: 80%;
@@ -410,18 +402,14 @@ hr {
   font-size: 1.2rem;
   color: #ede0e0;
 }
-@media (max-width: 768px) {
-  .first-container {
-    width: 10rem;
-    gap: 0.5rem;
-  }
-  .company-name-en {
-    padding-right: 3em;
-  }
-  .trademark {
-    gap: 20rem;
-  }
-  nav {
-    gap: 5.5rem;
-  }
+.creator {
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -7.5em;
+  color: var(--white-color);
 }
+
