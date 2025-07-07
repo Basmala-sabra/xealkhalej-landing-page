@@ -1,4 +1,4 @@
-const contactButton = document.querySelector(".phone-button-header");
+const contactButton = document.querySelector(".phone");
 console.log(contactButton);
 const whatsappContact = document.querySelector(".whatsapp");
 const whatsappNumber = "+966507681272";
@@ -15,7 +15,7 @@ contactButton.addEventListener("click", function dialCompany() {
   contactButton.classList.add(
     "active"
   ); 
-  console.log("BRAVOOOOOOOOOOO");
+ 
 });
 
 whatsappContact.addEventListener("click", function whatsappCompany() {
