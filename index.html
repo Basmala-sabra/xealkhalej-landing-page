@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <title>شركة اكسي الخليج للاستقدام</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
@@ -14,39 +14,42 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <img src="assets/logo.webp" alt="company’s logo" class="logo" />
       <h1><a href="#">شركة اكسي الخليج للاستقدام</a></h1>
 
       <nav>
-        <a href="#first-nav">خدماتنا</a>
-        <a href="#second-nav">من نحن</a>
-        <a href="#third-nav">تواصل معنا </a>
+        <a href="#services-nav">خدماتنا</a>
+        <a href="#who-are-we-nav">من نحن</a>
+        <a href="#contact-us-nav">تواصل معنا </a>
       </nav>
-      <a href="#" class="phone"> 1272 768 50 966+</a>
+      <button onclick="dialCompany" class="phone-button-header"> 1272 768 50 966+</button> <!--TEST THIS--> 
     </header>
 
     <main>
-      <h2 id="third-nav">مكتب استقدام سريع ومعتمد</h2>
-      <p class="about-office">
-        مكتب استقدام مرخص وموثوق بخبرة تتجاوز 10 سنوات في تقديم خدمات الاستقدام
-        باحترافية وسرعة لكافة مناطق المملكة.
-      </p>
       <div class="main-container">
-        <ul class="main-list">
-          <li>عقود رسمية وتقييم ذهبي على منصة مساند .</li>
-          <li>تنوع الجنسيات: الفلبين - بنجلاديش - كينيا - أثيوبيا والمزيد.</li>
-          <li>سرعة في الإجراءات: وصول العمالة ابتداء من 25 يوم فقط.</li>
-          <li>خدمة عملاء متواصلة لتسهيل كل خطوة في طلبك.</li>
-          <li>عروض خاصة على الاستقدام .</li>
-        </ul>
-        <div class="slideshow"></div>
+
+        <h2 id="contact-us-nav">مكتب استقدام سريع ومعتمد</h2>
+        <p class="about-office">
+          مكتب استقدام مرخص وموثوق بخبرة تتجاوز 10 سنوات في تقديم خدمات الاستقدام
+          باحترافية وسرعة لكافة مناطق المملكة.
+        </p>
+        <div class="sub-container">
+          <ul class="main-list">
+            <li>عقود رسمية وتقييم ذهبي على منصة مساند .</li>
+            <li>تنوع الجنسيات: الفلبين - بنجلاديش - كينيا - أثيوبيا والمزيد.</li>
+            <li>سرعة في الإجراءات: وصول العمالة ابتداء من 25 يوم فقط.</li>
+            <li>خدمة عملاء متواصلة لتسهيل كل خطوة في طلبك.</li>
+            <li>عروض خاصة على الاستقدام .</li>
+          </ul>
+          <div class="slideshow"></div>
+        </div>
       </div>
       <a href="#" class="phone"> استشارة مجانية عبر الرقم 1272 768 50 966+ </a>
-      <a class="whatsapp">تواصل عبر واتساب </a>
+      <a class="whatsapp" href="https://xealkhalej.sa/contact/" target="_blank">تواصل عبر واتساب </a>
     </main>
 
-    <section class="who-are-we" id="second-nav">
+    <section class="who-are-we" id="who-are-we-nav">
       <div class="who-are-we-container">
         <span class="who-are-we-heading">مكتب معتمد وموثوق من مساند </span>
         <p class="about-us-1">
@@ -80,9 +83,9 @@
       </div>
     </section>
 
-    <section class="services" id="first-nav">
-      <span class="best-office">اكسي الخليج - أفضل مكتب استقدام</span>
-      <h3>خدمات الاستقدام</h3>
+    <section class="services" id="services-nav">
+      <h3 class="best-office">اكسي الخليج - أفضل مكتب استقدام</h3>
+      <h4>خدمات الاستقدام</h4>
       <div class="services-list">
         <div class="first-two-services">
           <div class="first-service">
@@ -152,8 +155,8 @@
         <li>دعم متواصل</li>
       </ul>
 
-      <p class="guarantee-description">
-        فريقنا المتخصص زصاحب الخبرة في الاستقدام، مستعد لمساعدتكم في كافة
+      <p class="guarantee-description-two">
+        فريقنا المتخصص، صاحب الخبرة في الاستقدام، مستعد لمساعدتكم في كافة
         الخطوات، من البداية وحت اختيار العاملة المنزليةالمناسبة، وإلى ما بعد
         الطلب، بخبرة واسعة لكافة متطلبات الإستقدام والقوانين والإجراءات.
       </p>
@@ -189,13 +192,13 @@
       </div>
       <div class="footer-bottom">
         <hr />
-        <span>2024 شركة اكسي الخليج للاستقدام. جميع الحقوق محفوظة.</span>
+        <span>شركة اكسي الخليج للاستقدام. جميع الحقوق محفوظة 2025 © .</span>
         <p>
           مكتب استقدام بريدة، معتمد من مساند، بترخيص رسمي من وزارة الموارد
           البشرية والتنمية الاجتماعية برقم (60).
         </p>
       </div>
-      <div class="creator">Made by Basmala.</div>
+      <div class="creator">.Made by Basmala</div>
     </footer>
     <script src="script.js"></script>
   </body>

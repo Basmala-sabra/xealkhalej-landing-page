@@ -1,27 +1,37 @@
 const contactButton = document.querySelector(".phone");
-console.log(contactButton);
-const whatsappContact = document.querySelector(".whatsapp");
-const whatsappNumber = "+966507681272";
 
 contactButton.addEventListener("click", function dialCompany() {
-  contactButton.removeAttribute(
-    "href"
-  ); 
-  const phoneNumber = contactButton.textContent.trim(); 
-  contactButton.href = `tel:${phoneNumber.replace(
-    /\s+/g,
-    ""
-  )}`;
-  contactButton.classList.add(
-    "active"
-  ); 
- 
+  contactButton.removeAttribute("href");
+  const phoneNumber = contactButton.textContent.trim();
+  contactButton.href = `tel:${phoneNumber.replace(/\s+/g, "")}`;
+  contactButton.classList.add("active");
 });
 
-whatsappContact.addEventListener("click", function whatsappCompany() {
-  const defaultMessage = "مرحبا، أنا مهتمة بتفاصيل أكثر.";
-  const encodeMessage =
-    encodeURIComponent(defaultMessage); 
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeMessage}`;
-  window.open(whatsappUrl, "_blank");
+
+
+
+// Smooth scrolling for anchor links
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+anchorLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            const targetPosition = targetSection.offsetTop - headerHeight - 20;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
 });
+
+
+
+       
+  
+
