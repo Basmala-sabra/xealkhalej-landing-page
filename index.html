@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>شركة اكسي الخليج للاستقدام</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
@@ -15,15 +15,16 @@
   </head>
   <body>
     <header class="header">
-      <img src="assets/logo.webp" alt="company’s logo" class="logo" />
+      <img src="assets/logo.webp" alt="شعار شركة اكسي الخليج" class="logo" />
       <h1><a href="#">شركة اكسي الخليج للاستقدام</a></h1>
-
+      <button class="menu-button">☰</button>
       <nav>
         <a href="#services-nav">خدماتنا</a>
         <a href="#who-are-we-nav">من نحن</a>
         <a href="#contact-us-nav">تواصل معنا </a>
       </nav>
-      <button onclick="dialCompany" class="phone-button-header"> 1272 768 50 966+</button> <!--TEST THIS--> 
+      <button class="phone-button-header">1272 768 50 966+</button>
+      <!--TEST THIS-->
     </header>
 
     <main>
@@ -42,10 +43,11 @@
             <li>خدمة عملاء متواصلة لتسهيل كل خطوة في طلبك.</li>
             <li>عروض خاصة على الاستقدام .</li>
           </ul>
-          <div class="slideshow"></div>
+     
+           <div class="slideshow"></div>
         </div>
       </div>
-      <a href="#" class="phone"> استشارة مجانية عبر الرقم 1272 768 50 966+ </a>
+      <a href="#" class="phone"> استشارة مجانية     <a>
       <a class="whatsapp" href="https://xealkhalej.sa/contact/" target="_blank">تواصل عبر واتساب </a>
     </main>
 
@@ -88,19 +90,19 @@
       <h4>خدمات الاستقدام</h4>
       <div class="services-list">
         <div class="first-two-services">
-          <div class="first-service">
+          <div class="first-service" id="rcruitment-of-workers">
             <img
               src="assets/labor-image.webp"
-              alt="labor image"
+              alt="تأجير العمالة المنزلية"
               class="labor-image"
             />
             <span>عاملة منزلية بالشهر</span>
             <p>عاملات بعقود شهرية لمنطقة القصيم فقط</p>
           </div>
-          <div class="second-service">
+          <div class="second-service" id="recruiting-drivers-move">
             <img
               src="assets/driver-image.webp"
-              alt="driver"
+              alt="تاجير سائق خاص"
               class="driver-image"
             />
             <span>استقدام سائق خاص</span>
@@ -110,10 +112,10 @@
           </div>
         </div>
         <div class="second-two-services">
-          <div class="third-service">
+          <div class="third-service" id="ready-to-move-labors-move">
             <img
               src="assets/woman-labor-image.webp"
-              alt="ready-to-move labors"
+              alt="عمالة جاهزة للنقل"
               class="ready-to-move-labors"
             />
             <span>عمالة جاهزة للنقل</span>
@@ -122,10 +124,10 @@
               المختلفة.
             </p>
           </div>
-          <div class="fourth-service">
+          <div class="fourth-service" id="several-nationalites-move">
             <img
               src="assets/several-nationalites.webp"
-              alt="several nationalites"
+              alt="استقدام من جنسيات مختلفة"
               class="several-nationalities"
             />
             <span>نوفر استقدام من جنسيات متعددة</span>
@@ -173,17 +175,21 @@
       <div class="second-column-footer">
         <span>خدماتنا</span>
         <ul>
-          <li>استقدام عمالة منزلية</li>
-          <li>استقدام من جنسيات متعددة</li>
-          <li>عمالة جاهزة للنقل</li>
-          <li>استقدام سائقين</li>
+          <li><a href ="#rcruitment-of-workers">استقدام عمالة منزلية</a>
+
+          </li>
+        <li><a href="#several-nationalites-move">استقدام من جنسيات متعددة.</a></li>
+         <li><a href="#ready-to-move-labors-move">عمالة جاهزة للنقل</a></li>
+         <li><a href="#recruiting-drivers-move">استقدام سائقين  </a></li>
+       
         </ul>
       </div>
 
       <div class="third-column-footer">
         <span>تواصل معنا</span>
         <ul>
-          <li>+966 50 768 1272</li>
+          <li></li>
+          <li>  1272 768 50 966+</li>
           <li>
             المملكة العربية السعودية- بريدة - شارع أبو بكر الصديق مقابل كلية
             البنات.
@@ -192,10 +198,9 @@
       </div>
       <div class="footer-bottom">
         <hr />
-        <span>شركة اكسي الخليج للاستقدام. جميع الحقوق محفوظة 2025 © .</span>
+        <span>جميع الحقوق محفوظة لدى شركة اكسي الخليج للاستقدام  2025 ©  </span>
         <p>
-          مكتب استقدام بريدة، معتمد من مساند، بترخيص رسمي من وزارة الموارد
-          البشرية والتنمية الاجتماعية برقم (60).
+          مكتب استقدام بريدة، معتمد من مساند.
         </p>
       </div>
       <div class="creator">.Made by Basmala</div>

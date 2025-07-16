@@ -43,6 +43,9 @@ header {
   display: flex;
   gap: 1rem;
 }
+.menu-button {
+  display: none;
+}
 nav a {
   font-size: 1.6rem;
   padding: 2.2em 2em 0 0;
@@ -79,7 +82,7 @@ a {
   cursor: pointer;
   background-color: var(--phone-button-hover);
   box-shadow: 3px -0.7px 3px var(--phone-button-shadow);
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
 }
 
 main {
@@ -105,15 +108,14 @@ h2 {
 .main-list li {
   line-height: 3em;
 }
-
 .sub-container {
   display: flex;
   flex-direction: row;
-  column-gap: 6em;
+  gap: 7em;
 }
 .slideshow {
-  width: 35%;
-  margin: -16em 0 0 0;
+  width: 34%;
+  margin: -16em 0 -10em 0;
   background-size: cover;
   background-position: center;
   animation: slideshow 8s infinite;
@@ -135,7 +137,7 @@ h2 {
 }
 .phone {
   display: inline-block;
-  width: 20%;
+  width: 15%;
   background-color: var(--phone-button-background);
   color: var(--phone-button);
   margin: 2em 11.5em 8em 0;
@@ -150,9 +152,11 @@ h2 {
   transition: all 0.5s ease-in-out;
   background-color: var(--phone-button-hover);
   box-shadow: 2px -0.7px 2px var(--phone-button-shadow);
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+
   color: var(--white-color);
 }
+
 .whatsapp {
   display: inline-block;
   width: 15%;
@@ -254,6 +258,7 @@ h4 {
 
 h4 {
   padding-top: 1em;
+  padding-bottom: 2em;
   font-weight: 700;
   font-size: 2.5rem;
   color: var(--main-color);
@@ -274,10 +279,10 @@ h4 {
   border-radius: 1rem;
 }
 
-.first-two-services,
+/* .first-two-services,
 .second-two-services {
   margin-top: 4.5em;
-}
+} */
 /* .first-service,
 .third-service {
   margin-right: 3em;
@@ -307,6 +312,7 @@ h4 {
   font-size: 1.5rem;
   color: #4e555a;
   width: 65%;
+  margin-bottom: 1.5em;
 }
 .second-two-services {
   display: flex;
@@ -390,7 +396,16 @@ footer {
 }
 .second-column-footer {
   width: 15%;
+  
 }
+.second-column-footer a{
+color: #ede0e0;
+cursor: pointer;
+}
+.second-column-footer a:hover{
+  color: rgb(194, 162, 140);
+}
+
 .third-column-footer li {
   width: 73%;
 }
@@ -423,45 +438,146 @@ hr {
   margin-top: -7.5em;
   color: var(--white-color);
 }
-@media (max-width: 1024px) { /* footer is hidden */ 
+@media (min-width: 320px) and (max-width: 480px) {
+  /* 0 >= 320px */
   html {
-    font-size: 50%;
+    font-size: 35%;
+  }
+  .logo {
+    width: 15%;
+  }
+  h1 a {
+    width: 100%;
+  }
+  .menu-button {
+    display: block;
+    margin-right: 21rem;
+    font-size: 3rem;
+    font-weight: 900;
+    border: none;
+    background-color: #ffffff;
+    color: var(--main-color);
   }
   nav {
-    padding-right: 26em;
+    display: none;
+  }
+  .phone-button-header {
+    margin-top: 1.7em;
+    margin-right: -14em;
+    cursor: pointer;
+  }
+  main {
+    max-width: 98%;
+  }
+  h2 {
+    padding-right: 0.5em;
+  }
+  .about-office {
+    margin-right: 1.5em;
+    width: 69%;
+    font-size: 2rem;
+  }
+  .sub-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .main-list {
+    margin-right: 3em;
+    font-size: 2rem;
+    width: 64%;
+  }
+  .main-list li {
+    line-height: 2.5em;
+  }
+  .slideshow {
+    width: 100%;
+    height: 50rem;
+    margin: 0.5em;
+    padding: 0;
+  }
+  .phone,
+  .whatsapp {
+    width: 93%;
+    font-size: 3.4rem;
+    margin-right: 1em;
+    margin-left: 1em;
   }
   .phone {
-    width: 24%;
+    margin-bottom: 3em;
   }
-  .services-list {
-    margin-right: 21em;
+  .who-are-we-container {
+    width: 87%;
+  }
+  .who-are-we-heading {
+    padding-right: 2em;
+  }
+  .about-us-1,
+  .about-us-2 {
+    font-size: 2.5rem;
+    margin-right: 2.5em;
+    width: 88%;
+  }
+  .about-us-2 {
+    margin-bottom: 2em;
+  }
+  .features {
+    width: 95%;
+  }
+  .features-list li:not(.before-last-box, .last-box) {
+    margin-top: 0;
+  }
+  .features-list {
+    justify-content: center;
+    gap: 4rem;
+  }
+  .features-list li {
+    width: 77%;
+  }
+  .reliable-recruitment,
+  .wide-expertise,
+  .continuous-support,
+  .special-actions {
+    font-size: 2rem;
+  }
+  .features div {
+    font-size: 2rem;
+  }
+  .best-office {
+    font-size: 2rem;
   }
   .first-service p,
   .second-service p,
   .third-service p,
   .fourth-service p {
-    margin-bottom: 2em;
+    font-size: 2rem;
   }
-  /* .footer-bottom {
-    min-height: 52vh;
-  } */
-  /*
+  .guarantee-paragraph {
+    width: 86%;
+    padding-right: 5em;
+  }
+  .guarantee-description,
+  .guarantee-description-two {
+    font-size: 2rem;
+    margin-right: 7em;
+  }
+  footer {
+    gap: 0.5em;
+  }
   .creator{
-     margin-top: -261.5em; 
+    margin-top: 0.5em;
   }
-     */
+   footer {
+    height: 60vh;
+}
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  /* 321 >= 768 */
 
-@media (max-width: 768px) {
   html {
-    font-size: 30%;
-  }
-}
-
-@media (max-width: 767.98px) {
-  html {
-    font-size: 25%;
+    font-size: 50%;
   }
   .logo {
     width: 8%;
@@ -471,6 +587,13 @@ hr {
   }
   .phone-button-header {
     margin-right: 4em;
+  }
+  main{
+    min-width: 100%;
+
+  }
+  .sub-container{
+    flex-wrap: wrap;
   }
   h2 {
     font-size: 2.5rem;
@@ -485,6 +608,15 @@ hr {
   .phone {
     width: 36%;
     margin-right: 3.5em;
+    margin-top: 12rem;
+  }
+  .slideshow{
+    margin-top: -5rem;
+    width: 100%;
+    height: 61rem;
+  }
+  .whatsapp{
+    min-width: 37%;
   }
   .who-are-we-container {
     width: 57%;
@@ -507,25 +639,78 @@ hr {
   .features-list li:not(.before-last-box, .last-box) {
     margin-top: 6em;
   }
+}
 
-  /* .first-service,
-  .third-service {
-    margin-right: -1em;
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* 769  > 1024 px  */
+
+  html {
+    font-size: 55%;
   }
-  .second-service,
-  .fourth-service {
-    margin-right: 18em;
-  } 
-  footer{                 FOOTER ISN’T VISIBLE HERE!
-  font-size: 45%;
-  min-height: 90vh;
+  nav {
+    padding-right: 3em;
+  }
+  .main-container{ 
+    padding-right: 1rem;
+  }
+  .sub-container{
+   flex-wrap: wrap;
+
+  }
+  .slideshow{
+    margin-top: -6rem;
+    margin-right: 18rem;
+    width: 70%;
+    height: 47rem;
+  }
+  .phone {
+    width: 27%;
+    margin-top: 14rem;
+    margin-right: 19.5rem;
+  }
+  .whatsapp{
+    width: 27%;
+
+  }
+  .who-are-we-heading{
+    display: block;
+    min-width: 129%;
+  }
+  .first-two-services, .second-two-services{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .features-list{
+    gap: 1rem;
+  }
+.footer{
+  min-width: 76.5rem;
 }
-   .first-column-footer {
-    margin-right: 43em;
+  .creator {
+    margin-top: -261.5em;
+  }
+
+  .first-column-footer {
+    margin-right: 13em;
+  }
+
 }
-.creator{
-    background-color: red;
-  } 
-    */
-}
- 
+
+/* @media (min-width: 1024) { */
+  /*1024+ */
+
+  /* html {
+    font-size: 100%;
+  }
+   .first-two-services, .second-two-services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  
+  } */
