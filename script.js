@@ -1,10 +1,19 @@
-const contactButton = document.querySelector(".phone");
+const contactButton = document.querySelector(".phone-button-header");
 
 contactButton.addEventListener("click", function dialCompany() {
   contactButton.removeAttribute("href");
   const phoneNumber = contactButton.textContent.trim();
   contactButton.href = `tel:${phoneNumber.replace(/\s+/g, "")}`;
   contactButton.classList.add("active");
+});
+
+const mainContactButton = document.querySelector(".phone");
+
+mainContactButton.addEventListener("click", function dialCompany() {
+  mainContactButton.removeAttribute("href");
+  const phoneNumber = mainContactButton.textContent.trim();
+  mainContactButton.href = `tel:${phoneNumber.replace(/\s+/g, "")}`;
+  mainContactButton.classList.add("active");
 });
 
 
