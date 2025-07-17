@@ -7,17 +7,14 @@
 }
 html {
   font-size: 62.5%;
-  /* min-height: 100vh; */
 }
 :root {
   --main-color: #654d3c;
   --secondary-color: #f0f2f4;
   --h2-color: #a08b5b;
   --about-office-color: #4e5860;
-  --black-color: #000000;
   --phone-button: #ffffff;
   --phone-button-background: #a17f66;
-  --phone-button-hover: #695344;
   --phone-button-shadow: #302a25;
   --about-us-text: #6c757d;
   --white-color: #ffffff;
@@ -51,7 +48,7 @@ nav a {
   padding: 2.2em 2em 0 0;
   color: var(--main-color);
   font-weight: 650;
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; /* HERE */
 }
 
 nav {
@@ -61,7 +58,7 @@ nav {
   transition: all 0.5s ease-in;
 }
 a:hover {
-  color: var(--h2-color);
+  /* color: var(--h2-color); */
 }
 a {
   text-decoration: none;
@@ -74,15 +71,15 @@ a {
   margin: 1.3em 7em 1.5em 0;
   border-radius: 1rem;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   border: none;
   transition: all 0.5s ease-out;
 }
 .phone-button-header:hover {
   cursor: pointer;
-  background-color: var(--phone-button-hover);
+  background-color: #695344;
+
   box-shadow: 3px -0.7px 3px var(--phone-button-shadow);
-  /* font-size: 1.6rem; */
 }
 
 main {
@@ -103,7 +100,7 @@ h2 {
 .main-list {
   margin: 1.5em 12em 0 11.3em;
   font-size: 1.6rem;
-  color: var(--black-color);
+  color: #000000;
 }
 .main-list li {
   line-height: 3em;
@@ -137,20 +134,20 @@ h2 {
 }
 .phone {
   display: inline-block;
-  width: 15%;
+  width: 20%;
   background-color: var(--phone-button-background);
   color: var(--phone-button);
   margin: 2em 11.5em 8em 0;
   padding: 1.2em 0 1.5em 0;
   text-align: center;
   border-radius: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 601;
   transition: all 0.5s ease-in-out;
 }
 .phone:hover {
   transition: all 0.5s ease-in-out;
-  background-color: var(--phone-button-hover);
+  background-color: #6c4e3b;
   box-shadow: 2px -0.7px 2px var(--phone-button-shadow);
   /* font-size: 1.5rem; */
 
@@ -264,7 +261,6 @@ h4 {
   color: var(--main-color);
 }
 .services {
-
   margin: 5em 0 15em 0;
 }
 .first-two-services {
@@ -396,13 +392,12 @@ footer {
 }
 .second-column-footer {
   width: 15%;
-  
 }
-.second-column-footer a{
-color: #dfcbcb;
-cursor: pointer;
+.second-column-footer a {
+  color: #dfcbcb;
+  cursor: pointer;
 }
-.second-column-footer a:hover{
+.second-column-footer a:hover {
   color: rgb(194, 162, 140);
 }
 
@@ -448,7 +443,7 @@ hr {
     width: 15%;
     margin-right: 0;
   }
-  
+
   h1 a {
     width: 57%;
   }
@@ -463,6 +458,13 @@ hr {
   }
   nav {
     display: none;
+  }
+  .nav-tabs.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
   }
   .phone-button-header {
     margin-top: 1.7em;
@@ -566,38 +568,40 @@ hr {
     margin-right: 3em;
     width: 80%;
   }
-  .guarantee-section li{
+  .guarantee-section li {
     margin-right: 2.5em;
   }
   footer {
     gap: 5.5em;
-    min-height: 60vh;
+    min-height: 80vh;
   }
-  .first-column-footer p, .second-column-footer li{
+  .first-column-footer p,
+  .second-column-footer li {
     font-size: 1.8em;
     width: 82%;
   }
-  .creator{
-    margin-top: -10.5em;
+  .creator {
+    margin-top: -4.5em;
   }
-   footer {
+  footer {
     height: 60vh;
-}
-.first-column-footer{
-  margin-right: 4em;
-  
-}
-.first-column-footer, .second-column-footer, .third-column-footer{
-  width: 35%;
-}
-.third-column-footer{
-  margin-right: 6em;
-  margin-top: -13em;
-  width: 70%;
-}
-.third-column-footer li{
-  font-size: 1.8rem;
-}
+  }
+  .first-column-footer {
+    margin-right: 4em;
+  }
+  .first-column-footer,
+  .second-column-footer,
+  .third-column-footer {
+    width: 35%;
+  }
+  .third-column-footer {
+    margin-right: 6em;
+    margin-top: -8em;
+    width: 70%;
+  }
+  .third-column-footer li {
+    font-size: 1.8rem;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -615,11 +619,10 @@ hr {
   .phone-button-header {
     margin-right: 4em;
   }
-  main{
+  main {
     min-width: 100%;
-
   }
-  .sub-container{
+  .sub-container {
     flex-wrap: wrap;
   }
   h2 {
@@ -637,12 +640,12 @@ hr {
     margin-right: 3.5em;
     margin-top: 12rem;
   }
-  .slideshow{
+  .slideshow {
     margin-top: -5rem;
     width: 100%;
     height: 61rem;
   }
-  .whatsapp{
+  .whatsapp {
     min-width: 37%;
   }
   .who-are-we-container {
@@ -677,14 +680,13 @@ hr {
   nav {
     padding-right: 3em;
   }
-  .main-container{ 
+  .main-container {
     padding-right: 1rem;
   }
-  .sub-container{
-   flex-wrap: wrap;
-
+  .sub-container {
+    flex-wrap: wrap;
   }
-  .slideshow{
+  .slideshow {
     margin-top: -6rem;
     margin-right: 18rem;
     width: 70%;
@@ -695,15 +697,15 @@ hr {
     margin-top: 14rem;
     margin-right: 19.5rem;
   }
-  .whatsapp{
+  .whatsapp {
     width: 27%;
-
   }
-  .who-are-we-heading{
+  .who-are-we-heading {
     display: block;
     min-width: 129%;
   }
-  .first-two-services, .second-two-services{
+  .first-two-services,
+  .second-two-services {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -711,12 +713,12 @@ hr {
     align-items: center;
     height: 100%;
   }
-  .features-list{
+  .features-list {
     gap: 1rem;
   }
-.footer{
-  min-width: 76.5rem;
-}
+  .footer {
+    min-width: 76.5rem;
+  }
   .creator {
     margin-top: -261.5em;
   }
@@ -724,15 +726,12 @@ hr {
   .first-column-footer {
     margin-right: 13em;
   }
-
 }
 
- @media (min-width: 1024) { 
+@media (min-width: 1024) {
   /*1024+ */
 
-   html {
+  html {
     font-size: 100%;
   }
-   
-  
-  } 
+}

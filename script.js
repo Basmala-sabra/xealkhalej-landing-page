@@ -2,44 +2,53 @@ const menuButton = document.querySelector(".menu-button");
 const navTabs = document.querySelector(".nav-tabs");
 
 menuButton.addEventListener("click", function toggleMenu(){
- navTabs.classList.toggle('active')
+ navTabs.classList.toggle('active');
 })
 
 
 
 
-const contactButton = document.querySelectorAll(".phone-button");
+const contactButton = document.querySelectorAll(".contact-button");
 
-contactButton.addEventListener("click", function dialCompany(){
+  contactButton.forEach(function (button){
 
-  contactButton.removeAttribute("href");
-  const phoneNumber = contactButton.textContent.trim();
-  contactButton.href = `tel:${phoneNumber.replace(/\s+/g, "")}`;
-  contactButton.classList.add("active");
+  button.addEventListener("click", function dialCompany(){
+  
+    button.removeAttribute("href");
+    const phoneNumber = button.textContent.trim();
+    button.href = `tel:${phoneNumber.replace(/\s+/g, "")}`;
+    button.classList.add("active");
+  })
 })
-
-
-
 
 // Smooth scrolling for anchor links
+
 const anchorLinks = document.querySelectorAll('a[href^="#"]');
 anchorLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        
-        if (targetSection) {
-            const headerHeight = document.querySelector('.header').offsetHeight;
-            const targetPosition = targetSection.offsetTop - headerHeight - 20;
-            
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
-    });
+link.addEventListener("click", function smoothScroll (e){ 
+e.preventDefault()
+const targetId = this.getAttribute('href');    
+const targetSection = document.querySelector(targetId);          
+
+  window.scrollTo({
+    top: targetSection.offsetTop,
+    behavior: "smooth",
+  });
+
 });
+});
+
+
+
+
+    
+        
+        
+        
+  
+
+
+
 
 
 
