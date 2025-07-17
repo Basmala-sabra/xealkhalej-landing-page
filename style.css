@@ -196,7 +196,7 @@ h2 {
 
 .about-us-1,
 .about-us-2 {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   color: var(--about-us-text);
   margin: 1.5em 8.5em 0 0;
   width: 68%;
@@ -264,7 +264,7 @@ h4 {
   color: var(--main-color);
 }
 .services {
-  background-color: #f0f2f4;
+
   margin: 5em 0 15em 0;
 }
 .first-two-services {
@@ -309,7 +309,7 @@ h4 {
 .second-service p,
 .third-service p,
 .fourth-service p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #4e555a;
   width: 65%;
   margin-bottom: 1.5em;
@@ -346,7 +346,7 @@ h4 {
 .guarantee-description-two {
   width: 54%;
   margin: 1em 10em 2em;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 footer {
   background-color: rgb(101, 77, 60);
@@ -370,7 +370,7 @@ footer {
   font-size: 1.4rem;
   width: 70%;
   line-height: 2em;
-  color: #d6cece;
+  color: #dfcbcb;
 }
 .first-column-footer {
   margin-right: 16em;
@@ -399,7 +399,7 @@ footer {
   
 }
 .second-column-footer a{
-color: #ede0e0;
+color: #dfcbcb;
 cursor: pointer;
 }
 .second-column-footer a:hover{
@@ -408,6 +408,7 @@ cursor: pointer;
 
 .third-column-footer li {
   width: 73%;
+  color: #dfcbcb;
 }
 .footer-bottom {
   display: flex;
@@ -429,7 +430,7 @@ hr {
   color: #ede0e0;
 }
 .creator {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -441,17 +442,19 @@ hr {
 @media (min-width: 320px) and (max-width: 480px) {
   /* 0 >= 320px */
   html {
-    font-size: 35%;
+    font-size: 45%;
   }
   .logo {
     width: 15%;
+    margin-right: 0;
   }
+  
   h1 a {
-    width: 100%;
+    width: 57%;
   }
   .menu-button {
     display: block;
-    margin-right: 21rem;
+    margin-right: 12rem;
     font-size: 3rem;
     font-weight: 900;
     border: none;
@@ -463,7 +466,7 @@ hr {
   }
   .phone-button-header {
     margin-top: 1.7em;
-    margin-right: -14em;
+    margin-right: -13em;
     cursor: pointer;
   }
   main {
@@ -500,9 +503,9 @@ hr {
   .phone,
   .whatsapp {
     width: 93%;
-    font-size: 3.4rem;
-    margin-right: 1em;
-    margin-left: 1em;
+    font-size: 3rem;
+    margin-right: 0.6em;
+    margin-left: 0.5em;
   }
   .phone {
     margin-bottom: 3em;
@@ -511,7 +514,7 @@ hr {
     width: 87%;
   }
   .who-are-we-heading {
-    padding-right: 2em;
+    padding-right: 0.3em;
   }
   .about-us-1,
   .about-us-2 {
@@ -554,22 +557,44 @@ hr {
     font-size: 2rem;
   }
   .guarantee-paragraph {
-    width: 86%;
-    padding-right: 5em;
+    width: 93%;
+    padding-right: 1em;
   }
   .guarantee-description,
   .guarantee-description-two {
     font-size: 2rem;
-    margin-right: 7em;
+    margin-right: 3em;
+    width: 80%;
+  }
+  .guarantee-section li{
+    margin-right: 2.5em;
   }
   footer {
-    gap: 0.5em;
+    gap: 5.5em;
+    min-height: 100vh;
+  }
+  .first-column-footer p, .second-column-footer li{
+    font-size: 1.8em;
+    width: 82%;
   }
   .creator{
-    margin-top: 0.5em;
+    margin-top: -13.5em;
   }
    footer {
     height: 60vh;
+}
+.first-column-footer{
+  margin-right: 4em;
+}
+.first-column-footer, .second-column-footer, .third-column-footer{
+  width: 35%;
+}
+.third-column-footer{
+  margin-right: 6em;
+  width: 70%;
+}
+.third-column-footer li{
+  font-size: 1.8rem;
 }
 }
 
@@ -700,17 +725,12 @@ hr {
 
 }
 
-/* @media (min-width: 1024) { */
+ @media (min-width: 1024) { 
   /*1024+ */
 
-  /* html {
+   html {
     font-size: 100%;
   }
-   .first-two-services, .second-two-services{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-  }
+   
   
-  } */
+  } 

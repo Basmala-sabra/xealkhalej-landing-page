@@ -1,3 +1,16 @@
+const menuButton = document.querySelector(".menu-button");
+const tabsMenu = document.querySelector(".tabs");
+
+menuButton.addEventListener("click", function toggleMenu() {
+tabsMenu.classList.toggle('active');
+})
+
+
+
+
+
+
+
 const contactButton = document.querySelector(".phone-button-header");
 
 contactButton.addEventListener("click", function dialCompany() {
