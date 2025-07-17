@@ -1,33 +1,22 @@
 const menuButton = document.querySelector(".menu-button");
-const tabsMenu = document.querySelector(".tabs");
+const navTabs = document.querySelector(".nav-tabs");
 
-menuButton.addEventListener("click", function toggleMenu() {
-tabsMenu.classList.toggle('active');
+menuButton.addEventListener("click", function toggleMenu(){
+ navTabs.classList.toggle('active')
 })
 
 
 
 
+const contactButton = document.querySelectorAll(".phone-button");
 
+contactButton.addEventListener("click", function dialCompany(){
 
-
-const contactButton = document.querySelector(".phone-button-header");
-
-contactButton.addEventListener("click", function dialCompany() {
   contactButton.removeAttribute("href");
   const phoneNumber = contactButton.textContent.trim();
   contactButton.href = `tel:${phoneNumber.replace(/\s+/g, "")}`;
   contactButton.classList.add("active");
-});
-
-const mainContactButton = document.querySelector(".phone");
-
-mainContactButton.addEventListener("click", function dialCompany() {
-  mainContactButton.removeAttribute("href");
-  const phoneNumber = mainContactButton.textContent.trim();
-  mainContactButton.href = `tel:${phoneNumber.replace(/\s+/g, "")}`;
-  mainContactButton.classList.add("active");
-});
+})
 
 
 

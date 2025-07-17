@@ -422,11 +422,11 @@ hr {
   border: 1px solid rgb(111 83 63);
 }
 .footer-bottom span {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #ffffff;
 }
 .footer-bottom p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #ede0e0;
 }
 .creator {
@@ -571,26 +571,28 @@ hr {
   }
   footer {
     gap: 5.5em;
-    min-height: 100vh;
+    min-height: 60vh;
   }
   .first-column-footer p, .second-column-footer li{
     font-size: 1.8em;
     width: 82%;
   }
   .creator{
-    margin-top: -13.5em;
+    margin-top: -10.5em;
   }
    footer {
     height: 60vh;
 }
 .first-column-footer{
   margin-right: 4em;
+  
 }
 .first-column-footer, .second-column-footer, .third-column-footer{
   width: 35%;
 }
 .third-column-footer{
   margin-right: 6em;
+  margin-top: -13em;
   width: 70%;
 }
 .third-column-footer li{
