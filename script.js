@@ -5,23 +5,8 @@ menuButton.addEventListener("click", function toggleMenu() {
   navTabs.classList.toggle("active");
 });
 
-const contactButtons = document.querySelectorAll(".contact-button");
 
-contactButtons.forEach(function (button) {
-  button.addEventListener("click", function preventDefault(e) {
-    e.preventDefault();
 
-    const phoneNumber = button.getAttribute("data-number").trim();
-    const cleanNumber = phoneNumber.replace(/\s+/g, "");
-
-    // Update the href attribute properly
-    button.setAttribute("href", `tel:${cleanNumber}`);
-    button.classList.add("active");
-  });
-
-  // Programmatically "click" the updated link
-  button.click(); // This will trigger the phone call prompt
-});
 
 // Smooth scrolling for anchor links
 
