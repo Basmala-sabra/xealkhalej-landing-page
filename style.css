@@ -462,9 +462,8 @@ hr {
   .nav-tabs.active {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 0.5rem;
+    margin-right: 20em;
   }
   .phone-button-header {
     margin-top: 1.7em;
