@@ -9,7 +9,7 @@ menuButton.addEventListener("click", function toggleMenu() {
 
 
 // Smooth scrolling for anchor links
-
+/*
 const anchorLinks = document.querySelectorAll('a[href^="#"]');
 anchorLinks.forEach((link) => {
   link.addEventListener("click", function smoothScroll(e) {
@@ -23,3 +23,4 @@ anchorLinks.forEach((link) => {
     });
   });
 });
+*/
