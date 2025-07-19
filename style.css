@@ -52,16 +52,20 @@ nav li  {
   transition: all 0.2s ease-out; /* HERE */
 }
 nav a{
-  color: var(--main-color)
+  color: var(--main-color);
 }
 nav ul {
   padding-right: 48em;
   display: flex;
   flex-direction: row;
   transition: all 0.5s ease-in;
+  
 }
 nav li{
   list-style-type: none;
+}
+nav li a:hover{
+color: rgb(179, 153, 131);
 }
 a {
   text-decoration: none;
