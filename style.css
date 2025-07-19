@@ -38,36 +38,41 @@ h1 a {
 }
 header {
   display: flex;
+  width: 100%;
   gap: 1rem;
 }
-.menu-button {
+/* .menu-button {
   display: none;
-}
-nav a {
+} */
+nav li  {
   font-size: 1.6rem;
   padding: 2.2em 2em 0 0;
   color: var(--main-color);
   font-weight: 650;
   transition: all 0.2s ease-out; /* HERE */
 }
-
-nav {
+nav a{
+  color: var(--main-color)
+}
+nav ul {
   padding-right: 48em;
   display: flex;
   flex-direction: row;
   transition: all 0.5s ease-in;
 }
-a:hover {
-  /* color: var(--h2-color); */
+nav li{
+  list-style-type: none;
 }
 a {
   text-decoration: none;
 }
 
 .phone-button-header {
+  width: 10%;
+  display: block;
   background-color: var(--main-color);
   color: var(--white-color);
-  padding: 1em 0.8em 1em;
+  padding: 1em 0.6em 1em 0.4em;
   margin: 1.3em 7em 1.5em 0;
   border-radius: 1rem;
   font-weight: 700;
@@ -275,14 +280,6 @@ h4 {
   border-radius: 1rem;
 }
 
-/* .first-two-services,
-.second-two-services {
-  margin-top: 4.5em;
-} */
-/* .first-service,
-.third-service {
-  margin-right: 3em;
-} */
 .first-service,
 .second-service,
 .third-service,
@@ -345,6 +342,7 @@ h4 {
   font-size: 1.7rem;
 }
 footer {
+  width:100%;
   background-color: rgb(101, 77, 60);
   display: flex;
   flex-direction: row;
@@ -363,13 +361,13 @@ footer {
 }
 
 .first-column-footer p {
-  font-size: 1.4rem;
-  width: 70%;
+  font-size: 1.7rem;
+  width: 93%;
   line-height: 2em;
   color: #dfcbcb;
 }
 .first-column-footer {
-  margin-right: 16em;
+  margin-right: 29em;
 }
 .company-name-footer {
   font-size: 1.7rem;
@@ -385,7 +383,7 @@ footer {
 
 .second-column-footer li,
 .third-column-footer li {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   list-style-type: none;
   line-height: 2.9rem;
   color: #ede0e0;
@@ -410,7 +408,7 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 hr {
   width: 80%;
@@ -431,7 +429,6 @@ hr {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: -7.5em;
   color: var(--white-color);
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -445,9 +442,18 @@ hr {
   }
 
   h1 a {
-    width: 57%;
+    width: 82%;
   }
-  .menu-button {
+  .phone-button-header{
+    display: none;
+  }
+  nav ul{
+    padding-right: 0;
+  }
+  nav li{
+    padding-right:1em;
+  }
+  /* .menu-button {
     display: block;
     margin-right: 12rem;
     font-size: 3rem;
@@ -459,12 +465,25 @@ hr {
   nav {
     display: none;
   }
-  .nav-tabs.active {
+  .nav-tabs.active{
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin-right: 20em;
+    gap: 1rem;
   }
+  .nav-tabs a{
+    background-color: red;
+    position: absolute;
+    left: 79%;
+    top: 100%;
+    width: 70%;
+    height: 20rem;
+    /* max-width: 20rem; 
+
+  } 
+    */
+  
+  
   .phone-button-header {
     margin-top: 1.7em;
     margin-right: -13em;
@@ -478,8 +497,8 @@ hr {
   }
   .about-office {
     margin-right: 1.5em;
-    width: 69%;
-    font-size: 2rem;
+    width: 77%;
+    font-size: 2.4rem;
   }
   .sub-container {
     display: flex;
@@ -489,8 +508,8 @@ hr {
   }
   .main-list {
     margin-right: 3em;
-    font-size: 2rem;
-    width: 64%;
+    font-size: 2.2rem;
+    width: 74%;
   }
   .main-list li {
     line-height: 2.5em;
@@ -515,7 +534,9 @@ hr {
     width: 87%;
   }
   .who-are-we-heading {
-    padding-right: 0.3em;
+    padding-right: 1.6em;
+    display: block;
+    width: 100%;
   }
   .about-us-1,
   .about-us-2 {
@@ -551,6 +572,10 @@ hr {
   .best-office {
     font-size: 2rem;
   }
+  h4{
+    font-size: 2.7rem;
+  }
+  
   .first-service p,
   .second-service p,
   .third-service p,
@@ -571,52 +596,61 @@ hr {
     margin-right: 2.5em;
   }
   footer {
-    gap: 5.5em;
-    min-height: 80vh;
+    gap: 0em;
+    min-height: 100vh;
+    height: 100%;
   }
+  
   .first-column-footer p,
   .second-column-footer li {
     font-size: 1.8em;
-    width: 82%;
+    width: 61%;
   }
-  .creator {
-    margin-top: -4.5em;
-  }
-  footer {
-    height: 60vh;
-  }
+  
   .first-column-footer {
     margin-right: 4em;
+    width: 87%;
   }
-  .first-column-footer,
+  
   .second-column-footer,
   .third-column-footer {
-    width: 35%;
+    width: 100%;
+    margin-right: 5em;
   }
   .third-column-footer {
-    margin-right: 6em;
-    margin-top: -8em;
-    width: 70%;
+    
+    margin-top: -1em;
+    margin-bottom: 7em;
   }
   .third-column-footer li {
     font-size: 1.8rem;
   }
+  .footer-bottom{
+    min-height: 37vh;
+    gap:1.5rem;
+  }
+  
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   /* 321 >= 768 */
 
   html {
-    font-size: 50%;
+    font-size: 70%;
   }
   .logo {
-    width: 8%;
+    width: 12%;
   }
   nav {
     padding-right: 0.5em;
   }
+  nav ul{
+    padding-right: 1em;
+  }
   .phone-button-header {
-    margin-right: 4em;
+    margin-right: 1em;
+    margin-left: 0.2em;
+    width: 28%;
   }
   main {
     min-width: 100%;
@@ -630,9 +664,10 @@ hr {
   }
   .about-office {
     margin-right: 3.5em;
+    width: 50%;
   }
   .main-list {
-    margin: 1.5em 4em 0 0;
+    margin: 1.5em 6em 0 0;
   }
   .phone {
     width: 36%;
@@ -653,13 +688,17 @@ hr {
   .who-are-we-heading {
     padding-right: 2em;
     font-size: 2.5rem;
+    display: block;
+    width: 113%;
+    margin-top: -1em;
   }
   .about-us-1,
   .about-us-2 {
     margin-right: 4em;
+    width: 75%;
   }
   .features-list {
-    gap: 1.2em;
+    gap: 0.6em;
   }
   .features-list li {
     box-shadow: 0 -0.5px 1px 0 rgb(101 77 60), 0 1px 1px 0 rgb(101 77 60),
@@ -668,27 +707,72 @@ hr {
   .features-list li:not(.before-last-box, .last-box) {
     margin-top: 6em;
   }
+  footer{
+    height: 100vh;
+    gap: 5rem;
+  }
+  .first-column-footer{
+    margin-right: 3em;
+  }
+  .second-column-footer{
+    width: 25%;
+  }
+  .third-column-footer{
+    width: 28%;
+  }
+  .footer-bottom{
+    margin-top: -20em;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   /* 769  > 1024 px  */
 
   html {
-    font-size: 55%;
+    font-size: 65%;
+  }
+  .logo{
+    width: 9%;
+    height: 5rem;
+    margin-top: 2.5em;
+  }
+  header{
+gap: 0.1em;
   }
   nav {
-    padding-right: 3em;
+    padding-right: 0em;
+  }
+  nav ul{
+    padding-right: 0;
+  }
+  .phone-button-header{
+    margin-right: 7em;
+    margin-bottom: 4.5em;
+    margin-top: 1.3em;
+    padding-top:1em;
+    padding-bottom: 1em;
+    width: 15%;
+
+  }
+  h1 a {
+    padding-top: 3.3em;
+  }
+  nav{
+    padding-top: 1.3em;
+    padding-right: 11em
   }
   .main-container {
     padding-right: 1rem;
+  }
+  .about-office{
+    width: 54%;
   }
   .sub-container {
     flex-wrap: wrap;
   }
   .slideshow {
     margin-top: -6rem;
-    margin-right: 18rem;
-    width: 70%;
+    width: 100%;
     height: 47rem;
   }
   .phone {
@@ -702,6 +786,11 @@ hr {
   .who-are-we-heading {
     display: block;
     min-width: 129%;
+    padding-right: 1.8em;
+  }
+  .about-us-1, .about-us-2{
+    margin-right: 3.5em;
+    width: 73%;
   }
   .first-two-services,
   .second-two-services {
@@ -715,11 +804,12 @@ hr {
   .features-list {
     gap: 1rem;
   }
-  .footer {
+  footer {
     min-width: 76.5rem;
+    height: 100vh;
   }
-  .creator {
-    margin-top: -261.5em;
+  .footer-bottom{
+    height: 50vh;
   }
 
   .first-column-footer {
@@ -732,5 +822,11 @@ hr {
 
   html {
     font-size: 100%;
+  }
+  footer{
+    height: 100vh;
+  }
+  .footer-bottom{
+    height: 50vh;
   }
 }

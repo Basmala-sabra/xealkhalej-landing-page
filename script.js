@@ -1,9 +1,17 @@
-const menuButton = document.querySelector(".menu-button");
-const navTabs = document.querySelector(".nav-tabs");
+// const menuButton = document.querySelector(".menu-button");
+// const navTabs = document.querySelector(".nav-tabs");
+// const contactButton = document.querySelector(".phone-button-header");
 
-menuButton.addEventListener("click", function toggleMenu() {
-  navTabs.classList.toggle("active");
-});
+// menuButton.addEventListener("click", function toggleMenu() {
+//   navTabs.classList.toggle("active");
+//   if (navTabs.classList.contains('active')) {
+//       contactButton.style.marginRight = '30px';
+//     } else {
+//       contactButton.style.marginRight = '0px';
+//     }
+// });
+
+
 
 
 
